@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Travel Agency - Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="top-nav">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Dream Travel Agency Logo">
+            </a>
+            <a href="index.html" class="nav-item">Home</a>
+             <a href="about.html" class="nav-item">About Us</a>
+            <a href="service.html" class="nav-item">Services</a>
+             <a href="faq.html" class="nav-item">FAQ</a>
+            <a href="gallery.html" class="nav-item">Gallery</a>
+            <a href="contact.html" class="nav-item active">Contact</a>
+        </nav>
+    </header>
+
+    <section class="contact-form-section">
+        <div class="contact-wrapper">
+            <div class="contact-form-container">
+                <div class="contact-form-card">
+                    <h1 class="contact-main-title">Dream Travel Agency</h1>
+                    <p class="contact-main-subtitle">Plan Your Perfect Vacation</p>
+                    
+                    <form class="contact-multi-step-form" action="#" method="POST">
+                        <div class="contact-tabs">
+                            <input type="radio" name="contact-tab" id="contact-tab1" checked>
+                            <input type="radio" name="contact-tab" id="contact-tab2">
+                            <input type="radio" name="contact-tab" id="contact-tab3">
+                            <input type="radio" name="contact-tab" id="contact-tab4">
+                            
+                            <div class="contact-progress-bar">
+                                <label for="contact-tab1" class="contact-progress-step active">1</label>
+                                <label for="contact-tab2" class="contact-progress-step">2</label>
+                                <label for="contact-tab3" class="contact-progress-step">3</label>
+                                <label for="contact-tab4" class="contact-progress-step">4</label>
+                            </div>
+                            
+                            <div class="contact-tab-content">
+
+                                <div class="contact-tab-panel" id="contact-panel1">
+                                    <h2>Personal Information</h2>
+                                    
+                                    <div class="contact-form-field-group">
+                                        <label for="contact-name">Full Name *</label>
+                                        <input type="text" id="contact-name" name="name" required placeholder="Enter your full name">
+                                    </div>
+                                    
+                                    <div class="contact-form-field-group">
+                                        <label for="contact-email">Email Address *</label>
+                                        <input type="email" id="contact-email" name="email" required placeholder="Enter your email address">
+                                    </div>
+                                    
+                                    <div class="contact-form-field-group">
+                                        <label for="contact-phone">Phone Number *</label>
+                                        <input type="tel" id="contact-phone" name="phone" required placeholder="Enter your phone number">
+                                    </div>
+                                    
+                                    <div class="contact-form-field-group">
+                                        <label>Number of Travelers *</label>
+                                        <div class="contact-form-options">
+                                            <label class="contact-form-option">
+                                                <input type="radio" name="travelers" value="1" checked required>
+                                                <span>1 Person</span>
+                                            </label>
+                                            <label class="contact-form-option">
+                                                <input type="radio" name="travelers" value="2">
+                                                <span>2 Persons</span>
+                                            </label>
+                                            <label class="contact-form-option">
+                                                <input type="radio" name="travelers" value="3">
+                                                <span>3 Persons</span>
+                                            </label>
+                                            <label class="contact-form-option">
+                                                <input type="radio" name="travelers" value="4">
+                                                <span>4 Persons</span>
+                                            </label>
+                                            <label class="contact-form-option">
+                                                <input type="radio" name="travelers" value="5">
+                                                <span>5 Persons</span>
+                                            </label>
+                                            <label class="contact-form-option">
+                                                <input type="radio" name="travelers" value="6">
+                                                <span>6 Persons</span>
+                                            </label>
+                                            <label class="contact-form-option">
+                                                <input type="radio" name="travelers" value="7">
+                                                <span>7 Persons</span>
+                                            </label>
+                                            <label class="contact-form-option">
+                                                <input type="radio" name="travelers" value="8">
+                                                <span>8 Persons</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-form-navigation">
+                                        <label for="contact-tab2" class="contact-form-btn contact-next-btn">Next →</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-tab-panel" id="contact-panel2">
+                                    <h2>Select Your Package</h2>
+                                    
+                                    <div class="contact-form-field-group">
+                                        <label>Choose Destination Package *</label>
+                                        <div class="contact-form-cards">
+                                            <label class="contact-form-card-option">
+                                                <input type="radio" name="package" value="naran" required>
+                                                <span>Naran Package</span>
+                                                <small style="display:block; margin-top:5px; color:#7a6954; font-style:italic;">Majestic valleys and serene lakes</small>
+                                            </label>
+                                            <label class="contact-form-card-option">
+                                                <input type="radio" name="package" value="kashmir">
+                                                <span>Azad Kashmir Package</span>
+                                                <small style="display:block; margin-top:5px; color:#7a6954; font-style:italic;">The paradise on earth awaits</small>
+                                            </label>
+                                            <label class="contact-form-card-option">
+                                                <input type="radio" name="package" value="hunza">
+                                                <span>Hunza Package</span>
+                                                <small style="display:block; margin-top:5px; color:#7a6954; font-style:italic;">Peaks, culture, and breathtaking views</small>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-form-field-group">
+                                        <label for="contact-startDate">Start Date *</label>
+                                        <input type="date" id="contact-startDate" name="startDate" required>
+                                        <span class="date-format-hint">MM/DD/YYYY</span>
+                                    </div>
+                                    
+                                    <div class="contact-form-navigation">
+                                        <label for="contact-tab1" class="contact-form-btn contact-prev-btn">← Previous</label>
+                                        <label for="contact-tab3" class="contact-form-btn contact-next-btn">Next →</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-tab-panel" id="contact-panel3">
+                                    <h2>Optional Activities (Add-ons)</h2>
+                                    
+                                    <div class="contact-form-field-group">
+                                        <label>Select Additional Activities (Prices per person)</label>
+                                        <div class="contact-form-checkboxes">
+                                            <label class="contact-form-checkbox">
+                                                <input type="checkbox" name="addons[]" value="paragliding">
+                                                <span>Paragliding</span>
+                                                <strong style="margin-left:auto; color:#5c4033;">PKR 8,000</strong>
+                                            </label>
+                                            <label class="contact-form-checkbox">
+                                                <input type="checkbox" name="addons[]" value="parasailing">
+                                                <span>Parasailing</span>
+                                                <strong style="margin-left:auto; color:#5c4033;">PKR 10,000</strong>
+                                            </label>
+                                            <label class="contact-form-checkbox">
+                                                <input type="checkbox" name="addons[]" value="chairlift">
+                                                <span>Chair Lift Ride</span>
+                                                <strong style="margin-left:auto; color:#5c4033;">PKR 3,000</strong>
+                                            </label>
+                                            <label class="contact-form-checkbox">
+                                                <input type="checkbox" name="addons[]" value="cablecar">
+                                                <span>Cable Car Ride</span>
+                                                <strong style="margin-left:auto; color:#5c4033;">PKR 4,000</strong>
+                                            </label>
+                                            <label class="contact-form-checkbox">
+                                                <input type="checkbox" name="addons[]" value="jeepsafari">
+                                                <span>Jeep Safari</span>
+                                                <strong style="margin-left:auto; color:#5c4033;">PKR 12,000</strong>
+                                            </label>
+                                            <label class="contact-form-checkbox">
+                                                <input type="checkbox" name="addons[]" value="boating">
+                                                <span>Boating</span>
+                                                <strong style="margin-left:auto; color:#5c4033;">PKR 5,000</strong>
+                                            </label>
+                                            <label class="contact-form-checkbox">
+                                                <input type="checkbox" name="addons[]" value="hiking">
+                                                <span>Guided Hiking</span>
+                                                <strong style="margin-left:auto; color:#5c4033;">PKR 6,000</strong>
+                                            </label>
+                                            <label class="contact-form-checkbox">
+                                                <input type="checkbox" name="addons[]" value="skiiing">
+                                                <span>Skiing (Winter)</span>
+                                                <strong style="margin-left:auto; color:#5c4033;">PKR 15,000</strong>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-form-field-group">
+                                        <label>Travel Insurance *</label>
+                                        <div class="contact-form-options">
+                                            <label class="contact-form-option">
+                                                <input type="radio" name="insurance" value="yes" required>
+                                                <span>Yes, include insurance (PKR 2,000 per person)</span>
+                                            </label>
+                                            <label class="contact-form-option">
+                                                <input type="radio" name="insurance" value="no">
+                                                <span>No, I don't need insurance</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-form-navigation">
+                                        <label for="contact-tab2" class="contact-form-btn contact-prev-btn">← Previous</label>
+                                        <label for="contact-tab4" class="contact-form-btn contact-next-btn">Next →</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-tab-panel" id="contact-panel4">
+                                    <h2>Review and Submit</h2>
+                                    
+                                    <div class="contact-form-field-group">
+                                        <label>Special Requests & Notes</label>
+                                        <textarea name="requests" rows="4" placeholder="Any special requirements, dietary restrictions, or additional notes for your trip..." style="width: 100%; padding: 14px 18px; border: 2px solid #c7b8a5; border-radius: 10px; font-family: 'Arial', sans-serif; color: #5c4033; resize: vertical;"></textarea>
+                                    </div>
+                                    
+                                    <div class="contact-form-field-group">
+                                        <label>How did you hear about us? *</label>
+                                        <div class="contact-form-options">
+                                            <label class="contact-form-option">
+                                                <input type="radio" name="reference" value="social" required>
+                                                <span>Social Media</span>
+                                            </label>
+                                            <label class="contact-form-option">
+                                                <input type="radio" name="reference" value="friend">
+                                                <span>Friend/Family</span>
+                                            </label>
+                                            <label class="contact-form-option">
+                                                <input type="radio" name="reference" value="search">
+                                                <span>Search Engine</span>
+                                            </label>
+                                            <label class="contact-form-option">
+                                                <input type="radio" name="reference" value="other">
+                                                <span>Other</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="total-charge-display" style="background: #fdf6f0; border: 2px solid #dfa666; border-radius: 10px; padding: 20px; margin-top: 20px;">
+                                        <h3 style="color: #5c4033; margin-bottom: 10px;">Important Note:</h3>
+                                        <p style="color: #7a6954; line-height: 1.6;">
+                                            Our travel consultant will contact you within 24 hours with the total charges based on:<br>
+                                            1. Selected package (Naran, Kashmir, or Hunza)<br>
+                                            2. Number of travelers<br>
+                                            3. Optional activities selected<br>
+                                            4. Travel insurance choice<br><br>
+                                            <strong>All prices will be confirmed via email.</strong>
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="contact-form-field-group">
+                                        <label class="contact-terms-checkbox">
+                                            <input type="checkbox" name="terms" required>
+                                            <span>I agree to terms & conditions *</span>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="contact-form-navigation">
+                                        <label for="contact-tab3" class="contact-form-btn contact-prev-btn">← Previous</label>
+                                        <button type="submit" class="contact-form-btn contact-submit-btn">Submit Booking Request</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer1">
+        <h2>Contact Us</h2>
+        <p>Email: dreamtravels@gmail.com</p>
+        <p>Phone: +92 300 1234567</p>
+        <p>Address: 123 Travel Lane, Adventure City, Pakistan</p>
+    </footer>
+    
+    <footer class="site-footer">
+        <p>&copy; 2024 Dream Travel Agency. All rights reserved.</p>
+    </footer>
+</body>
+</html>
